@@ -15,23 +15,17 @@ import Footer from "../../components/Footer";
 
 const CALENDARDATA = [
   {
-    id: "0",
-    title: "Exciting Event",
-    start: "2025-02-27",
-    description: "Join us for an amazing event!",
+    id: "3",
+    title: "CTF Showdown",
+    start: "2025-06-06",
+    description: "Test your skills against other cybersecurity enthusiasts in epic 1v1 showdowns at 14:00!"
   },
   {
-    id: "1",
-    title: "Other Event",
-    start: "2025-02-15",
-    description: "This is another cool event happening soon.",
-  },
-  {
-    id: "2",
-    title: "Pipi popo",
-    start: "2025-03-10",
-    description: "The most exiting of all",
-  },
+    id: "4",
+    title: "Malware Analysis Workshop",
+    start: "2025-06-10",
+    description: "Get hands on experience in malware analysis and vulnerability exploitation!"
+  }
 ];
 
 type SelectedEvent = {

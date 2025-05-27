@@ -7,15 +7,15 @@ import {remark} from "remark"
 
 import type {Announcement} from "../types";
 
-const blogsDirectory = path.join(process.cwd(), "announcements")
+const announcementsDirectory = path.join(process.cwd(), "announcements")
 
 export const getSortedAnnouncements = (): Announcement[] => {
-    const filenames = fs.readdirSync(blogsDirectory)
+    const filenames = fs.readdirSync(announcementsDirectory)
 
     const announcementData = filenames.map((filename) => {
         const id = filename.replace(/\.md$/, "")
 
-        const fullPath = path.join(blogsDirectory, filename)
+        const fullPath = path.join(announcementsDirectory, filename)
         const fileContents = fs.readFileSync(fullPath, "utf8")
 
         const metadata = matter(fileContents)
@@ -47,8 +47,8 @@ export const getSortedAnnouncements = (): Announcement[] => {
 
 
 export const getArticleData = async (id: string) =>{
-    const blogpath = path.join(blogsDirectory, `${id}.md`)
-    const contents = fs.readFileSync(blogpath, "utf8")
+    const announcementpath = path.join(announcementsDirectory, `${id}.md`)
+    const contents = fs.readFileSync(announcementpath, "utf8")
 
     const matterResult = matter(contents)
 

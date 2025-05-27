@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: white;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -31,7 +31,7 @@ body {
 }
 /* styles for the markdown formatting */
 .article{
-  @apply flex flex-col gap-3 text-lg tracking-wide mb-20 bg-white;
+  @apply flex flex-col gap-3 text-lg tracking-wide mb-20 bg-white text-black;
 }
 
 .article > h1 {
@@ -56,6 +56,10 @@ body {
 
 .article > blockquote {
   @apply pl-5 italic border-l-2 border-neutral-600 border-opacity-40 text-black;
+}
+
+.article > p > image {
+  @apply w-0.5 mx-auto
 }
 
 @media (max-width: 600px) {
