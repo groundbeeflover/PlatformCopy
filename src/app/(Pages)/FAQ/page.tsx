@@ -28,7 +28,7 @@ export default FAQ
 const FAQDATA = [
     {
         "question" : "What is maasec?",
-        "answer" : "Maasec is a student organization from maastricht university interested in all things software, but with a focus on cybersecurity."
+        "answer" : "Maasec is an ACM student chapter from maastricht university interested in all things software, but with a focus on cybersecurity."
     },
     {
         "question" : "What does maasec do?",

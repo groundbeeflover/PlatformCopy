@@ -59,8 +59,9 @@ body {
 }
 
 .article > p > image {
-  @apply w-0.5 mx-auto
+  @apply h-screen flex items-center justify-center
 }
+
 
 @media (max-width: 600px) {
   .fc-toolbar {
