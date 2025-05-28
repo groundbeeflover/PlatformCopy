@@ -68,3 +68,8 @@ export const getArticleData = async (id: string) =>{
         description: matterResult.data.description,
     }
 }
+
+export async function getArticleSlugs(): Promise<string[]>{
+    const files = fs.readdirSync(blogsDirectory);
+    return files.map((filename) => filename.replace(/\.md$/, ""))
+}

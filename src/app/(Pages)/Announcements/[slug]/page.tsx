@@ -1,16 +1,14 @@
 import Link from "next/link";
 import {ArrowLeftIcon} from "lucide-react";
-import {getArticleData} from "../../../../../lib/announcement";
+import {getArticleData, getArticleSlugs} from "../../../../../lib/announcement";
 import Footer from "app/components/Footer";
 
-type Params = Promise<{slug: string}>
 
 
-const Announcement = async (props: {params: Params}) => {
-    const params = await props.params;
-    const slug = params.slug;
+const Announcement = async ({params}: {params: Promise<{slug: string}>}) => {
+    const {slug} = await params;
     const articleData = await getArticleData(slug)
-
+    
     return (
         <div className="bg-white">
         <section className="mx-auto w-10/12 mt-20 flex flex-col gap-5 bg-white">
@@ -26,7 +24,12 @@ const Announcement = async (props: {params: Params}) => {
         <Footer />
         </div>
 
-    )
+)
 }
 
 export default Announcement;
+
+export async function generateStaticParams() {
+    const slugs = await getArticleSlugs();
+    return slugs.map((slug: string) => ({slug}));
+}

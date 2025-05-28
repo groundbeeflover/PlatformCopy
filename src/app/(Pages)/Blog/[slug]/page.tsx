@@ -1,15 +1,14 @@
 import Link from "next/link";
 import { ArrowLeftIcon } from "lucide-react";
-import { getArticleData } from "../../../../../lib/blogs";
+import { getArticleData, getArticleSlugs } from "../../../../../lib/blogs";
 import Footer from "app/components/Footer";
 
 
-type Params = Promise<{ slug: string }>
 
 
-const Blog = async (props: { params: Params }) => {
-    const params = await props.params;
-    const slug = params.slug;
+const Blog = async ({params}: { params: Promise<{slug: string}> }) => {
+    //const params = await props.params;
+    const {slug} = await params;
     const articleData = await getArticleData(slug)
 
     return (
@@ -30,3 +29,8 @@ const Blog = async (props: { params: Params }) => {
 }
 
 export default Blog;
+
+export async function generateStaticParams(){
+    const slugs = await getArticleSlugs();
+    return slugs.map((slug: string) => ({slug}));
+}
