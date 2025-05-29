@@ -19,4 +19,4 @@ An outstanding effort from our team representing Maastricht University on the gl
 
 Congratulations to the entire team - onwards and upwards!
 
-![Art](/ctf_team.jpeg)
+![Art](/Platform/ctf_team.jpeg)

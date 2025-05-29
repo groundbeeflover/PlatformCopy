@@ -18,4 +18,4 @@ The project was met with great feedback for its technical ambition, thoughtful d
 
 We’re proud of our team for pushing boundaries and stepping confidently into the world of hackathons. More to come. 🚀
 
-![Art](/hackathon_team.jpeg)
+![Art](/Platform/hackathon_team.jpeg)
