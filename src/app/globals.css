@@ -58,8 +58,8 @@ body {
   @apply pl-5 italic border-l-2 border-neutral-600 border-opacity-40 text-black;
 }
 
-.article > p > image {
-  @apply h-screen flex items-center justify-center
+.article > p > img {
+  @apply mx-auto my-4 block;
 }
 
 
