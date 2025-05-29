@@ -11,7 +11,7 @@ const navItems = [
 
 export default function Navbar() {
     return (
-        <header className="w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <header className="w-full z-50 transition-all duration-300 bg-white shadow-md">
             <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div className="flex items-center gap-2">
                     <Link href="/">
