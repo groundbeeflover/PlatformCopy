@@ -161,7 +161,7 @@ export default function Home() {
             <Image src="/Platform/discord.svg" alt = "discord" className="w-10 h-10 inline" width={64} height={64}  />
           </a>
           <a href="https://ctftime.org/team/365940" className="text-white hover:bg-gray-200 transition-colors">
-            <Image src="/ctftime.png" alt = "ctftime" className="w-10 h-10 inline"  width={64} height={64}  />
+            <Image src="/Platform/ctftime.png" alt = "ctftime" className="w-10 h-10 inline"  width={64} height={64}  />
           </a>
         </div>
       </section>

@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   //
   basePath: "/Platform",
-  output: 'export',
+  //output: 'export',
   reactStrictMode: true,
   //assetPrefix: "/maasec.com/"
 };
