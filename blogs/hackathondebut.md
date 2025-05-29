@@ -1,5 +1,5 @@
 ---
-title: "THackathon Team Debut!"
+title: "Hackathon Team Debut!"
 date: 14-05-2025
 emoji: "🖥️"
 description: "Embracing stillness in a world that glorifies busyness."

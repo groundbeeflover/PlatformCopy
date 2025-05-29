@@ -18,4 +18,11 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    'mx-auto',
+    'my-4',
+    'block',
+    'max-w-full',
+    'h-auto',
+  ],
 } satisfies Config;
