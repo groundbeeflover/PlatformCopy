@@ -24,5 +24,6 @@ export default {
     'block',
     'max-w-full',
     'h-auto',
+    'w-fit'
   ],
 } satisfies Config;
