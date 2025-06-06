@@ -12,17 +12,13 @@ const Page = () => {
     return (
         <div className="bg-white">
             <Navbar />
-            <Body>
-                
-            {/*<div className="content-center w-11/12 mx-auto bg-transparent min-h-screen px-5 py-5">*/}
+            <Body> 
                 <H1>Announcements</H1>
                 {articlesMD !== null && (<AnnouncementArticleList articles={articlesMD} />)}
             </Body>
-            {/*</div>*/}
             <Footer />
-
         </div>
-        
+
     )
 }
 export default Page

@@ -14,6 +14,7 @@ const navItems = [
     { label: "Announcements", id: "/Platform/Announcements" }
 ];
 
+
 export default function Navbar() {
     const imgRef = useRef<HTMLImageElement>(null);
     const menuRef = useRef<HTMLDivElement>(null);
