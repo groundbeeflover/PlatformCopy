@@ -74,6 +74,13 @@ export default function Home() {
     },
   ];
 
+  const logos = [
+    { src: "/Platform/acm_logo.svg",   alt: "acm_logo" },
+    { src: "/Platform/brightlands_st_logo.png", alt: "brightlands_st_logo" },
+    { src: "/Platform/cei_logo.jpeg",  alt: "cei_logo" },
+    { src: "/Platform/maastricht-university-logo.png", alt: "maastricht-university-logo" },
+  ]
+
   return (
       <div className="min-h-screen text-black bg-white">
         <Navbar />
@@ -142,31 +149,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Rest of the sections remain the same */}
+        {/* Sponsors section */}
+        <section id="sponsors" className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-12 text-center font-archivo text-black">
+              Our Partners
+            </h2>
+            <div className="grid md:grid-cols-4 gap-8 items-center justify-items-center">
+              {logos.map(({src, alt}) => (
+                  <div key={src} className="w-full flex justify-center">
+                    <Image src={src} alt={alt} width={150} height={75}
+                           unoptimized  className="max-h-20 object-contain"
+                    />
+                  </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 relative bg-white/100">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-8 font-archivo text-black">
-             Join The Operation
-          </h2>
-          <p className="text-xl text-black mb-8 font-archivo">
-            Ready to explore the frontiers of technology and innovation?
-          </p>
+        {/* Rest of the sections remain the same */}
 
-          <a href="https://github.com/MaaSecLab" className="text-white hover:bg-gray-200 transition-colors">
-            <Github className="w-10 h-10 inline text-black" />
-          </a>
-          <a href="https://discord.com/invite/ghpWe7wawV" className="text-white hover:bg-gray-200 transition-colors">
-            <Image src="/Platform/discord.svg" alt = "discord" className="w-10 h-10 inline" width={64} height={64}  />
-          </a>
-          <a href="https://ctftime.org/team/365940" className="text-white hover:bg-gray-200 transition-colors">
-            <Image src="/Platform/ctftime.svg" alt = "ctftime" className="w-10 h-10 inline"  width={64} height={64}  />
-          </a>
-        </div>
-      </section>
+        {/* Contact Section */}
+        <section id="contact" className="py-20 relative bg-white/100">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-8 font-archivo text-black">
+              Join The Operation
+            </h2>
+            <p className="text-xl text-black mb-8 font-archivo">
+              Ready to explore the frontiers of technology and innovation?
+            </p>
 
-      <Footer />
-    </div>
+            <a href="https://github.com/MaaSecLab" className="hover:animate-pulse px-2">
+              <Github className="w-10 h-10 inline text-black"/>
+            </a>
+            <a href="https://discord.com/invite/ghpWe7wawV" className="hover:animate-pulse px-2">
+              <Image src="/Platform/discord.svg" alt="discord" className="w-10 h-10 inline" width={64} height={64}/>
+            </a>
+            <a href="https://ctftime.org/team/365940" className="hover:animate-pulse px-2">
+              <Image src="/Platform/ctftime.svg" alt="ctftime" className="w-10 h-10 inline" width={64} height={64}/>
+            </a>
+            <a href="https://www.linkedin.com/company/maasec/" className="hover:animate-pulse px-2">
+              <Image src="/Platform/linkedin-logo.png" alt="linkedin-logo" unoptimized className="w-10 h-10 inline"
+                     width={64} height={64}/>
+            </a>
+            <a href="https://www.instagram.com/acm.maastricht/" className="hover:animate-pulse px-2">
+              <Image src="/Platform/instagram_logo.png" alt="instagram_logo" unoptimized className="w-10 h-10 inline"
+                     width={64} height={64}/>
+            </a>
+          </div>
+        </section>
+
+        <Footer/>
+      </div>
   );
 }
