@@ -47,7 +47,7 @@ export default function Home() {
     {
       picture:"/Platform/workshop.jpeg",
       description: "⚙️ In our recent malware analysis workshop we explored:  Malware stages and detection mechanisms" + 
-      " 🔹 Sophisticated obfuscation techniques 🔹 Strategies for prevention, removal, and resilience.  Stay tuned for more workshops like this to come!"
+      " 🔹 Sophisticated obfuscation techniques 🔹 Strategies for prevention, removal, and resilience. Stay tuned for more workshops like this to come!"
     },
     {
       picture:"/Platform/ctf_team.jpeg",
