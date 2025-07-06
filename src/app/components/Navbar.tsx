@@ -38,7 +38,7 @@ export default function Navbar() {
     };
 
     return (
-        <header className="w-full z-50 transition-all duration-300 bg-white shadow-md">
+        <header className="w-full z-50 transition-all duration-300 bg-white">
             <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div className="flex items-center gap-2">
                     <Link href="/" className='flex flex-row gap-2'>

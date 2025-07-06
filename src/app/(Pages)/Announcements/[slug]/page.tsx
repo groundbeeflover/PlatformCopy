@@ -2,6 +2,7 @@ import Link from "next/link";
 import {ArrowLeftIcon} from "lucide-react";
 import {getArticleData, getArticleSlugs} from "../../../../../lib/announcement";
 import Footer from "app/components/Footer";
+import Navbar from "app/components/Navbar";
 
 
 
@@ -11,7 +12,8 @@ const Announcement = async ({params}: {params: Promise<{slug: string}>}) => {
     
     return (
         <div className="bg-white">
-        <section className="mx-auto w-10/12 mt-20 flex flex-col gap-5 bg-white">
+        <Navbar/>
+            <section className="mx-auto w-10/12 mt-10 sm:mt-5 sm:flex flex-col lg:gap-5 sm:gap-2 md:gap-3">
             <div className="flex justify-between ">
                 <Link href="/Announcements" className="text-black">
                     <ArrowLeftIcon width={20}/>

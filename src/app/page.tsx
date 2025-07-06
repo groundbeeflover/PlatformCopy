@@ -38,6 +38,28 @@ export default function Home() {
   }, []);
   */
 
+  const wyd = [
+    {
+      picture:"/Platform/brightlands_sponsor.jpeg",
+      description: "🏆 MaaSec awarded TheBakerz the MaaSec Award at the Brightlands Startup Challenge for their zero-commission platform " +
+      "supporting local bakeries. We’re excited to provide security consulting and penetration testing to help them grow securely. "
+    },
+    {
+      picture:"/Platform/workshop.jpeg",
+      description: "⚙️ In our recent malware analysis workshop we explored:  Malware stages and detection mechanisms" + 
+      " 🔹 Sophisticated obfuscation techniques 🔹 Strategies for prevention, removal, and resilience.  Stay tuned for more workshops like this to come!"
+    },
+    {
+      picture:"/Platform/ctf_team.jpeg",
+      description: "🧠 Our CTF team placed 16th in the Student Division and 40th overall at UMDCTF 2025, competing against 700+ teams worldwide!"
+    },
+    {
+      picture:"/Platform/hackathon_team.jpeg",
+      description: "🚀 MaaSec’s Hackathon Team recently made its debut at the SURF Quantum Hackathon 2025 with a quantum-secure voting kiosk prototype!" + 
+      "Built with React, FastAPI, and QKD integration, the project earned great feedback for its technical depth and real-world potential."
+    }
+  ]
+
 
   // Rest of your data constants remain the same
 
@@ -109,7 +131,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 relative -mt-64">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center font-archivo text-black-400">
+          <h2 className="text-3xl font-bold mb-8 text-center font-archivo text-blue-900">
              About Us
           </h2>
           <div className="max-w-3xl mx-auto text-center">
@@ -124,10 +146,40 @@ export default function Home() {
         </div>
       </section>
 
+
+<section id="What are we up to" className="py-20 bg-gradient-to-b from-white to-blue-50">
+  <div className="container mx-auto px-5">
+    <h2 className="text-4xl font-bold mb-16 text-center font-archivo text-blue-900">
+      What are we up to?
+    </h2>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {wyd.map((item, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col"
+        >
+          <div className="relative w-full h-80">
+            <img
+              src={item.picture}
+              alt={`What we're up to ${index}`}
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+          <div className="p-6 flex-grow flex flex-col justify-between">
+            <p className="text-lg font-medium text-gray-800 text-center">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
       {/* Operations Section (previously What We Do) */}
       <section id="operations" className="py-20 relative bg-white/100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center font-archivo text-black">
+          <h2 className="text-3xl font-bold mb-12 text-center font-archivo text-blue-900">
             Operations
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -152,7 +204,7 @@ export default function Home() {
         {/* Sponsors section */}
         <section id="sponsors" className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center font-archivo text-black">
+            <h2 className="text-3xl font-bold mb-12 text-center font-archivo text-blue-900">
               Our Partners
             </h2>
             <div className="grid md:grid-cols-4 gap-8 items-center justify-items-center">
@@ -172,7 +224,7 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contact" className="py-20 relative bg-white/100">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8 font-archivo text-black">
+            <h2 className="text-3xl font-bold mb-8 font-archivo text-blue-900">
               Join The Operation
             </h2>
             <p className="text-xl text-black mb-8 font-archivo">
