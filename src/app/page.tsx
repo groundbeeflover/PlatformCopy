@@ -3,6 +3,7 @@ import { /*useState, useEffect*/} from "react";
 import { Laptop, Lightbulb, Book, Monitor, Terminal,Users, Github} from "lucide-react";
 import Navbar from "../app/components/Navbar";
 import Image from "next/image";
+import Link from 'next/link'
 import Footer from "../app/components/Footer";
 import { Metadata } from "next";
 
@@ -105,10 +106,10 @@ export default function Home() {
   ];
 
   const logos = [
-    { src: "/acm_logo.svg",   alt: "acm_logo" },
-    { src: "/brightlands_st_logo.png", alt: "brightlands_st_logo" },
-    { src: "/CEI.png",  alt: "cei_logo" },
-    { src: "/maastricht-university-logo.png", alt: "maastricht-university-logo" },
+    { src: "/acm_logo.svg",   alt: "acm_logo", website:"https://www.acm.org/"},
+    { src: "/brightlands_st_logo.png", alt: "brightlands_st_logo", website: "https://www.brightlands.com/en/brightlands-and-you/startups"},
+    { src: "/CEI.png",  alt: "cei_logo", website: "https://www.ceimaastricht.nl/"},
+    { src: "/maastricht-university-logo.png", alt: "maastricht-university-logo", website: "https://www.maastrichtuniversity.nl/"},
   ]
 
   return (
@@ -216,11 +217,13 @@ export default function Home() {
               Our Partners
             </h2>
             <div className="grid md:grid-cols-4 gap-8 items-center justify-items-center">
-              {logos.map(({src, alt}) => (
+              {logos.map(({src, alt, website}) => (
                   <div key={src} className="w-full flex justify-center">
-                    <Image src={src} alt={alt} width={150} height={75}
-                           unoptimized  className="max-h-20 object-contain"
-                    />
+                    <Link href={website}>
+                      <Image src={src} alt={alt} width={150} height={75}
+                          unoptimized  className="max-h-20 object-contain"
+                      />
+                    </Link>
                   </div>
               ))}
             </div>
