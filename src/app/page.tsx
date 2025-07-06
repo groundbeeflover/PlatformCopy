@@ -107,7 +107,7 @@ export default function Home() {
   const logos = [
     { src: "/acm_logo.svg",   alt: "acm_logo" },
     { src: "/brightlands_st_logo.png", alt: "brightlands_st_logo" },
-    { src: "/cei_logo.jpeg",  alt: "cei_logo" },
+    { src: "/CEI.png",  alt: "cei_logo" },
     { src: "/maastricht-university-logo.png", alt: "maastricht-university-logo" },
   ]
 
