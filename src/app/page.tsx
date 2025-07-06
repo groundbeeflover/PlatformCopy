@@ -48,21 +48,21 @@ export default function Home() {
 
   const wyd = [
     {
-      picture:"/Platform/brightlands_sponsor.jpeg",
+      picture:"/brightlands_sponsor.jpeg",
       description: "🏆 MaaSec awarded TheBakerz the MaaSec Award at the Brightlands Startup Challenge for their zero-commission platform " +
       "supporting local bakeries. We’re excited to provide security consulting and penetration testing to help them grow securely. "
     },
     {
-      picture:"/Platform/workshop.jpeg",
+      picture:"/workshop.jpeg",
       description: "⚙️ In our recent malware analysis workshop we explored:  Malware stages and detection mechanisms" + 
       " 🔹 Sophisticated obfuscation techniques 🔹 Strategies for prevention, removal, and resilience. Stay tuned for more workshops like this to come!"
     },
     {
-      picture:"/Platform/ctf_team.jpeg",
+      picture:"/ctf_team.jpeg",
       description: "🧠 Our CTF team placed 16th in the Student Division and 40th overall at UMDCTF 2025, competing against 700+ teams worldwide!"
     },
     {
-      picture:"/Platform/hackathon_team.jpeg",
+      picture:"/hackathon_team.jpeg",
       description: "🚀 MaaSec’s Hackathon Team recently made its debut at the SURF Quantum Hackathon 2025 with a quantum-secure voting kiosk prototype!" + 
       "Built with React, FastAPI, and QKD integration, the project earned great feedback for its technical depth and real-world potential."
     }
@@ -105,10 +105,10 @@ export default function Home() {
   ];
 
   const logos = [
-    { src: "/Platform/acm_logo.svg",   alt: "acm_logo" },
-    { src: "/Platform/brightlands_st_logo.png", alt: "brightlands_st_logo" },
-    { src: "/Platform/cei_logo.jpeg",  alt: "cei_logo" },
-    { src: "/Platform/maastricht-university-logo.png", alt: "maastricht-university-logo" },
+    { src: "/acm_logo.svg",   alt: "acm_logo" },
+    { src: "/brightlands_st_logo.png", alt: "brightlands_st_logo" },
+    { src: "/cei_logo.jpeg",  alt: "cei_logo" },
+    { src: "/maastricht-university-logo.png", alt: "maastricht-university-logo" },
   ]
 
   return (
@@ -243,17 +243,17 @@ export default function Home() {
               <Github className="w-10 h-10 inline text-black"/>
             </a>
             <a href="https://discord.com/invite/ghpWe7wawV" className="hover:animate-pulse px-2">
-              <Image src="/Platform/discord.svg" alt="discord" className="w-10 h-10 inline" width={64} height={64}/>
+              <Image src="/discord.svg" alt="discord" className="w-10 h-10 inline" width={64} height={64}/>
             </a>
             <a href="https://ctftime.org/team/365940" className="hover:animate-pulse px-2">
-              <Image src="/Platform/ctftime.svg" alt="ctftime" className="w-10 h-10 inline" width={64} height={64}/>
+              <Image src="/ctftime.svg" alt="ctftime" className="w-10 h-10 inline" width={64} height={64}/>
             </a>
             <a href="https://www.linkedin.com/company/maasec/" className="hover:animate-pulse px-2">
-              <Image src="/Platform/linkedin-logo.png" alt="linkedin-logo" unoptimized className="w-10 h-10 inline"
+              <Image src="/linkedin-logo.png" alt="linkedin-logo" unoptimized className="w-10 h-10 inline"
                      width={64} height={64}/>
             </a>
             <a href="https://www.instagram.com/acm.maastricht/" className="hover:animate-pulse px-2">
-              <Image src="/Platform/instagram_logo.png" alt="instagram_logo" unoptimized className="w-10 h-10 inline"
+              <Image src="/instagram_logo.png" alt="instagram_logo" unoptimized className="w-10 h-10 inline"
                      width={64} height={64}/>
             </a>
           </div>

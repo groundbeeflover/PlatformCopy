@@ -8,10 +8,10 @@ import { useRef } from 'react'
 
 
 const navItems = [
-    { label: "Our Events", id: "/Platform/Calendar" },
-    { label: "FAQ", id: "/Platform/FAQ" },
-    { label: "Blog", id: "/Platform/Blog" },
-    { label: "Announcements", id: "/Platform/Announcements" }
+    { label: "Our Events", id: "/Calendar" },
+    { label: "FAQ", id: "/FAQ" },
+    { label: "Blog", id: "/Blog" },
+    { label: "Announcements", id: "/Announcements" }
 ];
 
 
@@ -22,7 +22,7 @@ export default function Navbar() {
     const toggleIcon = () => {
         if (!imgRef.current) return;
         const isMenu = imgRef.current.src.includes('menu.svg');
-        imgRef.current.src = isMenu ? '/Platform/x.svg' : '/Platform/menu.svg';
+        imgRef.current.src = isMenu ? '/x.svg' : '/menu.svg';
 
 
         if (menuRef.current) {
@@ -43,7 +43,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-2">
                     <Link href="/" className='flex flex-row gap-2'>
                         <Image
-                            src="/Platform/acm.svg"
+                            src="/acm.svg"
                             alt="ACM logo"
                             width={32}
                             height={32}
@@ -76,7 +76,7 @@ export default function Navbar() {
                 <div className="md:hidden">
                     <button onClick={toggleIcon}>
                         <Image
-                            src="/Platform/menu.svg"
+                            src="/menu.svg"
                             ref={imgRef}
                             alt='menu'
                             width={32} height={32} />
