@@ -2,7 +2,7 @@
 title: "Hackathon Team Debut!"
 date: 14-05-2025
 emoji: "🖥️"
-description: "Embracing stillness in a world that glorifies busyness."
+description: "Find out about our hackathon team's experience at their first ever event!"
 image: "hackathon_team.jpeg"
 ---
 

@@ -8,7 +8,7 @@ export const AnnouncementArticleList = (props: ListProps) => {
     return (
         <div className="flex flex-col gap-2.5 text-lg items-center pb-5">
             {props.articles.map((article, id) => (
-                    <div className="py-1 max-w-3xl" key={id}>
+                    <div className="py-1 max-w-3xl grid-cols-1" key={id}>
                         <Link
                             href={`/Announcements/${article.id}`}
                             className="text-blue-900 hover:text-black

@@ -1,8 +1,16 @@
+
 import { /*useState, useEffect*/} from "react";
 import { Laptop, Lightbulb, Book, Monitor, Terminal,Users, Github} from "lucide-react";
 import Navbar from "../app/components/Navbar";
 import Image from "next/image";
 import Footer from "../app/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Maasec.com",
+  description: "Official website of ACM Student chapter MaaSec",
+};
+
 
 export default function Home() {
   //const [_isMenuOpen, _setIsMenuOpen] = useState(false);

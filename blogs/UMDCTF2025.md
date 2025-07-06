@@ -2,7 +2,7 @@
 title: "CTF Team UMDCTF Success!"
 date: 26-04-2025
 emoji: "🧠"
-description: "Embracing stillness in a world that glorifies busyness."
+description: "Our CTF team's recent performance and UMDCTF2025 was outstanding!"
 image: "hackathon_team.jpeg"
 ---
 
